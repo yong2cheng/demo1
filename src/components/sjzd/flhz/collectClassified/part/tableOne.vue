@@ -1,0 +1,102 @@
+<template lang="html">
+     <div class="hzfl_table scrollbox">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0" id="yc_bg_tab" class="flhz_tab">
+            <thead>
+              <tr>
+                <td rowspan="2" width="7%">地区</td>
+                <td colspan="3" width="27%">模型类</td>
+                <td colspan="2" width="27%">数据类</td>
+                <td colspan="3" width="27%">分析类</td>
+                <td rowspan="2" width="12%">合计</td>
+              </tr>
+              <tr>
+                <td>一致性</td>
+                <td>关联关系</td>
+                <td>模型匹配</td>
+                <td>采集数据异常</td>
+                <td>计算电量异常</td>
+                <td>母平异常</td>
+                <td>分线异常</td>
+                <td>网损异常</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>国调</td>
+                <td>23</td>
+                <td>23</td>
+                <td>6</td>
+                <td>45</td>
+                <td>23</td>
+                <td>6</td>
+                <td>23</td>
+                <td>23</td>
+                <td>184</td>
+              </tr>
+              <tr>
+                <td>华中</td>
+                <td>23</td>
+                <td>23</td>
+                <td>6</td>
+                <td>45</td>
+                <td>20</td>
+                <td>3</td>
+                <td>12</td>
+                <td>18</td>
+                <td>221</td>
+              </tr>
+              <tr>
+                <td>湖北</td>
+                <td>45</td>
+                <td>5</td>
+                <td>3</td>
+                <td>34</td>
+                <td>22</td>
+                <td>16</td>
+                <td>43</td>
+                <td>16</td>
+                <td>260</td>
+              </tr>
+              <tr>
+                <td>武汉</td>
+                <td>11</td>
+                <td>93</td>
+                <td>28</td>
+                <td>892</td>
+                <td>122</td>
+                <td>133</td>
+                <td>122</td>
+                <td>133</td>
+                <td>550</td>
+              </tr>
+              <tr>
+                <td>荆州</td>
+                <td>111</td>
+                <td>5</td>
+                <td>456</td>
+                <td>234</td>
+                <td>1982</td>
+                <td>266</td>
+                <td>1778</td>
+                <td>234</td>
+                <td>1982</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>合计</td>
+                <td>213</td>
+                <td>528</td>
+                <td>1550</td>
+                <td>6124</td>
+                <td>440</td>
+                <td>7471</td>
+                <td>6124</td>
+                <td>440</td>
+                <td>7471</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+    
+</template>

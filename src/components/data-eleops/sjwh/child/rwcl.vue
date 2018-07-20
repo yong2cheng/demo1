@@ -1,0 +1,386 @@
+<template>
+    <div>
+        <overlay style="min-height:600px;" oheight="60%" :close.sync="isShowd">
+      <div class="yiji_t">
+        <div class="t_title">
+          <span>任务处理状态</span>
+        </div>
+        <div class="t_sousuo">
+          <div class="left">
+            <span>设备名称：{{1}}</span>
+          <span>任务类型：{{2}}</span>
+          </div>
+          <div class="right">
+            <span>数据开始时间：</span>
+            <span>数据结束时间：</span>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+        <div style="height:calc(100% - 90px);border:1px solid #0d7474;padding:10px;box-sizing:border-box;">
+          <el-col style="height:100%;" :span="5">
+            <div>
+              <table style="position:relative;left:1px;" class="table">
+                <tbody>
+                  <tr>
+                    <td rowspan="3">处理流程</td>
+                    <td @click="cllc='统计电量'" class="isClick" :class="{xuanz:cllc=='统计电量'}">统计电量</td>
+                  </tr>
+                  <tr>
+                    <td @click="cllc='分线'" class="isClick" :class="{xuanz:cllc=='分线'}">分线</td>
+                  </tr>
+                  <tr>
+                    <td @click="cllc='母平'" class="isClick" :class="{xuanz:cllc=='母平'}">母平</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            </el-col>
+        <el-col style="height:100%;border:1px solid #0d7474;padding:10px;background:#012828;" :span="19">
+          <div style="height:100%;">
+            <div class="t_title">
+              <div class="left">
+                <button>日查询</button>
+              <button>月查询</button>
+              </div>
+              
+              <div class="right">
+                <el-date-picker
+                type="date"
+                v-model="dayDate"
+                value-format="yyyy-MM-dd"
+                placeholder="选择一个日期">
+                </el-date-picker>
+                <button>查询</button>
+              </div>
+              <div style="clear:both"></div>
+            </div>
+            <table v-show="cllc=='统计电量'" class="table">
+              <thead>
+                <tr>
+                  <td>序号</td>
+                  <td>设备</td>
+                  <td>正向有功</td>
+                  <td>反向有功</td>
+                  <td>正向无功</td>
+                  <td>反向无功</td>
+                </tr>
+              </thead>
+            </table>
+            <div v-show="cllc=='统计电量'" class="scroll" style="height:calc(100% - 80px);border:1px solid #0d7474;">
+              <table class="table">
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+            <table v-show="cllc=='分线'" class="table">
+              <thead>
+                <tr>
+                  <td>序号</td>
+                  <td>时间</td>
+                  <td>线路名称</td>
+                  <td>输入电量</td>
+                  <td>输出电量</td>
+                  <td>差电量</td>
+                  <td>平衡率</td>
+                </tr>
+              </thead>
+            </table>
+            <div v-show="cllc=='分线'" class="scroll1" style="height:calc(100% - 80px);border:1px solid #0d7474;">
+              <table class="table">
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+            <table v-show="cllc=='母平'" class="table">
+              <thead>
+                <tr>
+                  <td>序号</td>
+                  <td>时间</td>
+                  <td>线路名称</td>
+                  <td>输入电量</td>
+                  <td>输出电量</td>
+                  <td>差电量</td>
+                  <td>平衡率</td>
+                </tr>
+              </thead>
+            </table>
+            <div v-show="cllc=='母平'" class="scroll2" style="height:calc(100% - 80px);border:1px solid #0d7474;">
+              <table class="table">
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </el-col>
+        </div>
+      </div>
+    </overlay>
+    </div>
+</template>
+<script>
+export default {
+    props:["isShowd"],
+    data:function(){
+        return{
+            isShowd:false
+        }
+    }
+}
+</script>
+<style>
+
+</style>

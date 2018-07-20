@@ -1,0 +1,253 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?s4gxo9');
+  src:  url('fonts/icomoon.eot?s4gxo9#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?s4gxo9') format('truetype'),
+    url('fonts/icomoon.woff?s4gxo9') format('woff'),
+    url('fonts/icomoon.svg?s4gxo9#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-liuchengbianji:before {
+  content: "\e935";
+}
+.icon-shujubianji:before {
+  content: "\e93a";
+}
+.icon-suanfadingyi:before {
+  content: "\e943";
+}
+.icon-shuju:before {
+  content: "\e942";
+}
+.icon-fenbu:before {
+  content: "\e941";
+}
+.icon-huanyuan:before {
+  content: "\e934";
+}
+.icon-chongjisuan:before {
+  content: "\e932";
+}
+.icon-chongqi:before {
+  content: "\e933";
+}
+.icon-pinggubaogao:before {
+  content: "\e936";
+}
+.icon-quxian:before {
+  content: "\e939";
+}
+.icon-suanfatezheng:before {
+  content: "\e93b";
+}
+.icon-tijiao:before {
+  content: "\e93c";
+}
+.icon-yunxingtiaoshi:before {
+  content: "\e93d";
+}
+.icon-zhinengyanpan:before {
+  content: "\e93e";
+}
+.icon-zidongxiufu:before {
+  content: "\e93f";
+}
+.icon-chushihua:before {
+  content: "\e931";
+}
+.icon-xiufu:before {
+  content: "\e92e";
+}
+.icon-yanpan:before {
+  content: "\e92f";
+}
+.icon-zhili:before {
+  content: "\e930";
+}
+.icon-quanjing:before {
+  content: "\e92d";
+}
+.icon-xia:before {
+  content: "\e925";
+}
+.icon-baocun:before {
+  content: "\e927";
+}
+.icon-delete:before {
+  content: "\e928";
+}
+.icon-fuzhi:before {
+  content: "\e929";
+}
+.icon-jianque:before {
+  content: "\e92a";
+}
+.icon-liulan:before {
+  content: "\e92b";
+}
+.icon-xinjian:before {
+  content: "\e92c";
+}
+.icon-xiazai:before {
+  content: "\e900";
+}
+.icon-peizhi:before {
+  content: "\e901";
+}
+.icon-lishi:before {
+  content: "\e902";
+}
+.icon-daoru:before {
+  content: "\e903";
+}
+.icon-cxjs:before {
+  content: "\e904";
+}
+.icon-bidui:before {
+  content: "\e905";
+}
+.icon-zhuyi:before {
+  content: "\e906";
+}
+.icon-numberok:before {
+  content: "\e926";
+}
+.icon-shang:before {
+  content: "\e924";
+}
+.icon-yichang:before {
+  content: "\e923";
+}
+.icon-dbsx:before {
+  content: "\e91c";
+}
+.icon-error:before {
+  content: "\e91d";
+}
+.icon-mxwh:before {
+  content: "\e91e";
+}
+.icon-mxzc:before {
+  content: "\e91f";
+}
+.icon-sjss:before {
+  content: "\e920";
+}
+.icon-sjtj:before {
+  content: "\e921";
+}
+.icon-sjzl:before {
+  content: "\e922";
+}
+.icon-ywkhd:before {
+  content: "\e90e";
+}
+.icon-home:before {
+  content: "\e91a";
+}
+.icon-duiying:before {
+  content: "\e916";
+}
+.icon-biaoge:before {
+  content: "\e917";
+}
+.icon-qingdan:before {
+  content: "\e918";
+}
+.icon-pokou:before {
+  content: "\e919";
+}
+.icon-jia:before {
+  content: "\e907";
+}
+.icon-baobiao:before {
+  content: "\e908";
+}
+.icon-txgj:before {
+  content: "\e909";
+}
+.icon-dlcx:before {
+  content: "\e90a";
+}
+.icon-mppz:before {
+  content: "\e90b";
+}
+.icon-mxdz:before {
+  content: "\e90c";
+}
+.icon-zbgz:before {
+  content: "\e90d";
+}
+.icon-ywgl:before {
+  content: "\e90f";
+}
+.icon-xtgl:before {
+  content: "\e910";
+}
+.icon-tjbb:before {
+  content: "\e911";
+}
+.icon-sjzd:before {
+  content: "\e912";
+}
+.icon-sjjh:before {
+  content: "\e913";
+}
+.icon-sjfx:before {
+  content: "\e914";
+}
+.icon-gjjc:before {
+  content: "\e915";
+}
+.icon-pencil:before {
+  content: "\e91b";
+}
+.icon-barcode:before {
+  content: "\e937";
+}
+.icon-qrcode:before {
+  content: "\e938";
+}
+.icon-calculator:before {
+  content: "\e940";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-key:before {
+  content: "\e98e";
+}
+.icon-cogs:before {
+  content: "\e995";
+}
+.icon-power:before {
+  content: "\e9b5";
+}
+.icon-link:before {
+  content: "\e9cb";
+}
+.icon-up:before {
+  content: "\ea3a";
+}
+.icon-down:before {
+  content: "\ea3e";
+}
